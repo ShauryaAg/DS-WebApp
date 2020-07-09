@@ -54,7 +54,7 @@ st.write(pdk.Deck(
         pdk.Layer(
             'HexagonLayer',
             data=data[['date/time', 'latitude', 'longitude']],
-            get_position=['latitude', 'longitude'],
+            get_position=['longitude', 'latitude'],
             radius=100,
             extruded=True,
             pickable=True,
